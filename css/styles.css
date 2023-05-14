@@ -52,7 +52,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
 
   background-color: #a7d7bb;
 }
