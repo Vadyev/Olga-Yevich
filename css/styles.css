@@ -11,6 +11,12 @@ h6,
 p {
   margin: 0;
 }
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
 img {
   display: block;
@@ -32,9 +38,9 @@ img {
   }
 }
 /* Desctop styles & > */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;
+    max-width: 1200px;
   }
 }
 
@@ -47,6 +53,8 @@ img {
   text-decoration: none;
 }
 /* reset end */
+
+/* Header */
 .header {
   position: relative;
   /* z-index: var(--header-idx); */
@@ -56,26 +64,23 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* position: fixed; */
-
-  /* background-color: #a7d7bb; */
 }
+
 @media only screen and (max-width: 767px) {
   .header-container {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
+
 /* Logo */
 .logo-container {
   margin-left: auto;
   margin-right: auto;
 }
 .logo {
-  margin-right: auto;
-
   font-family: sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -83,7 +88,7 @@ img {
   text-decoration: none;
   color: var(--current-color);
 }
-
+/* Menu navigation */
 .menu-nav {
   display: flex;
   align-items: center;
@@ -147,47 +152,39 @@ img {
 .list .link:focus {
   color: var(--color-ocean);
 }
-/* .address {
-  font-style: normal;
-}
-@media only screen and (max-width: 767px) {
-  .address {
-    display: none;
-  }
-}
 
-.address-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .address-list {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .address-list {
-    display: flex;
-  }
-}
-
-.address .link {
+/* Header button */
+.header-btn {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--current-color);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
   text-decoration: none;
-  font-style: normal;
-  list-style: none;
-  font-weight: 400;
-
-  color: var(--color-slate);
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-@media only screen and (max-width: 1157px) {
-  .address .link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-  }
-} */
+
+.header-btn:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
 /* Mobile menu styles */
 .menu-toggle {
   min-height: 40px;
@@ -216,23 +213,23 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .menu-toggle-icon {
-  stroke: var(--current-color);
+  fill: var(--current-color);
 }
 
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-right: 24px;
-  padding-bottom: 40px;
-  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: var(--color-white);
+  background-color: var(--current-color);
   overflow-y: auto;
 
   transform: translateX(100%);
@@ -253,8 +250,8 @@ img {
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  color: var(--color-navy-blue);
+  gap: 10px;
+  color: black;
   text-decoration: none;
 
   margin: 0;
@@ -273,12 +270,12 @@ img {
   display: block;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  color: var(--color-navy-blue);
+  color: black;
   text-decoration: none;
 }
 .mobile-menu-link.current.link {
@@ -320,9 +317,4 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-slate);
-}
-
-/* Header button */
-.header-btn {
-  margin-left: auto;
 }
