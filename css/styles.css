@@ -327,6 +327,7 @@ img {
   margin-bottom: 20px;
   font-style: italic;
   font-size: 29px;
+  font-weight: bold;
   text-align: center;
   color: white;
   background-color: var(--current-color);
@@ -343,7 +344,8 @@ img {
   letter-spacing: 3px;
 }
 .about-text {
-  padding: 10px;
+  padding: 6px;
+  text-align: justify;
 }
 
 /* Education */
@@ -358,6 +360,8 @@ img {
   background-color: var(--current-color);
 }
 .edu-text {
+  padding: 6px;
+  text-align: justify;
 }
 /* Запити, з якими я працюю */
 .services-section {
