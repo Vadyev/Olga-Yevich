@@ -607,8 +607,8 @@ img {
 }
 .edu-title {
   padding: 10px;
-  font-size: 24px;
   text-align: center;
+  font-size: 26px;
   letter-spacing: 3px;
   color: white;
   background-color: var(--current-color);
