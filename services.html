@@ -4,6 +4,179 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container container">
+        <div class="logo-container">
+          <svg class="logomain" width="50" height="50">
+            <use href="./images/icons.svg#icon-logomain"></use>
+          </svg>
+          <span class="prof">Психолог, Гештальт-терапевт</span>
+          <a class="logo link" href="./index.html"> Ольга Євіч</a>
+        </div>
+        <div class="nav-container">
+          <nav class="menu-nav">
+            <ul class="menu-list list">
+              <li>
+                <a class="menu-link current link" href="/aboutme.html"
+                  >Про мене</a
+                >
+              </li>
+              <li>
+                <a class="menu-link link" href="./myminds.html">Мої роздуми</a>
+              </li>
+              <li>
+                <a class="menu-link link" href="./services.html">Послуги</a>
+              </li>
+              <li>
+                <a class="menu-link link" href="#reviews">Відгуки</a>
+              </li>
+              <li><a class="menu-link link" href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="header-btn btn" type="button" data-modal-open>
+          Запис на прийом
+        </button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" data-modal-close>
+            <svg class="modal-icon" width="34" height="34">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <strong class="modal-form-name"
+            >Залиште заявку і я вам обов'язково передзвоню
+          </strong>
+          <form class="modal-form" name="order-form">
+            <label class="modal-form-label" for="user_name">Ім'я</label>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                id="user_name"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+            <label class="modal-form-label" for="user_phone">Телефон</label>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user_phone"
+                id="user_phone"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="modal-form-label" for="user_email">Email</label>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user_email"
+                id="user_email"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="modal-form-label" for="user_message">Коментар</label>
+            <textarea
+              class="modal-form-message"
+              name="user_message"
+              rows="8"
+              id="user_message"
+              placeholder="Напишіть коментар"
+            ></textarea>
+            <label class="modal-form-agreement" for="user_agreement">
+              <input
+                class="modal-form-agreement-box"
+                type="checkbox"
+                name="user_agreement"
+                id="user_agreement"
+              />
+              <span class="modal-form-agreement-text"
+                >Я даю згоду на використання своїх персональних даних</span
+              >
+            </label>
+            <button class="form-button" type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="services-container container">
+      <h2 class="edu-title">Психологічна консультація</h2>
+      <p class="edu-text">
+        Психологічна консультація - надання психологічної допомоги психічно та
+        соматично здоровим людям у ситуаціях, коли вони стикаються зі своїми
+        проблемами. Завдання психологічного консультування - робота з
+        деструктивними формами спілкування, нераціональними способами
+        організації діяльності - тим, що призводить до травм, а згодом і хвороб.
+      </p>
+    </div>
+    <div class="services-container container">
+      <h2 class="edu-title">Психотерапія, допомога психолога у Дніпрі</h2>
+      <p class="edu-text">
+        Психотерапія – це взаємодія клієнта і терапевта, в результаті якої
+        перший може розібратися у важких переживаннях і знайти вирішення своїх
+        проблем. Психотерапевт виступає як провідник, що супроводжує особу, у
+        пошуку пацієнтом свого Я. Він ніколи не оцінюватиме і засуджуватиме
+        пацієнта, не говоритиме, що і як робити. Це може вирішувати лише сам
+        пацієнт. Але психотерапевт створить усі необхідні умови для того, щоб
+        таке рішення було для пацієнта посильним, адекватним і прийнято у його
+        інтересах. Тому прагнучи зрозуміти пацієнта, психотерапевт терпляче
+        чекає на момент, щоб вловити нитку того самого сенсу, який має
+        відношення до проблеми пацієнта.
+      </p>
+    </div>
+    <div class="services-container container">
+      <h2 class="edu-title">Психотерапевтичні групи</h2>
+      <p class="edu-text">
+        Психологічна консультація - надання психологічної допомоги психічно та
+        соматично здоровим людям у ситуаціях, коли вони стикаються зі своїми
+        проблемами. Завдання психологічного консультування - робота з
+        деструктивними формами спілкування, нераціональними способами
+        організації діяльності - тим, що призводить до травм, а згодом і хвороб.
+      </p>
+    </div>
+    <div class="price-container container">
+      <h2 class="edu-title">Вартісь послуг</h2>
+      <p class="edu-text">Індивідуальна консультація (50 хв.) - 1000 грн</p>
+      <p class="edu-text">Групова психотерапія (2 години) – 300-500 грн</p>
+      <p class="edu-text">Психологічні тренінги для організацій/компаній</p>
+      <p class="edu-text">
+        Волонтерська онлайн підтримка військових, що знаходяться у зоні бойових
+        дій
+      </p>
+    </div>
+  </body>
 </html>
