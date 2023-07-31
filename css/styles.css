@@ -58,6 +58,7 @@ img {
 /* Header */
 .header {
   position: relative;
+  /* position: fixed; */
   /* z-index: var(--header-idx); */
 }
 
@@ -647,4 +648,10 @@ img {
 }
 .address-list {
   padding: 10px;
+}
+
+.telegram {
+  fill: rgb(0, 136, 204);
+  position: fixed;
+  top: 50%;
 }
