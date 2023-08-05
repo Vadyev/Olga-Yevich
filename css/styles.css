@@ -653,5 +653,6 @@ img {
 .telegram {
   fill: rgb(0, 136, 204);
   position: fixed;
-  top: 50%;
+  top: 85%;
+  margin-left: 10px;
 }
