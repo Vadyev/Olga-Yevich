@@ -1,4 +1,3 @@
-
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -23,8 +22,8 @@ app.post('/send-email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail', // Вкажіть поштовий сервіс, наприклад, 'Gmail'
     auth: {
-      user: 'olga.yevich88@gmail.com', // Вкажіть вашу електронну адресу
-      pass: 'tdbxdflbv15' // Вкажіть ваш пароль для входу до пошти
+      user: 'vad.yevich@gmail.com', // Вкажіть вашу електронну адресу
+      pass: 'lubimayaola15' // Вкажіть ваш пароль для входу до пошти
     }
   });
 
@@ -51,4 +50,3 @@ app.post('/send-email', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Сервер запущено на порті ${PORT}`);
 });
-```
